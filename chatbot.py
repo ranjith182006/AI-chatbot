@@ -1,7 +1,6 @@
 
 from transformers import pipeline
 
-# load model
 chatbot = pipeline(
     "text2text-generation",
     model="google/flan-t5-large"
@@ -212,4 +211,5 @@ while True:
 #     bot_response = tokenizer.decode(chat_history_ids[:, bot_input_ids.shape[-1]:][0], skip_special_tokens=True)
 
 #     print("Bot:", bot_response)
+
 ########################################################################################
